@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>So taSty</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<style>
+		body{
+	        color: #000000;
+	        font-family: sans-serif;
+}
+header{
+	margin: 1px;
+	font-family: 'Cherry Bomb One', cursive;
+}
+.dws-menu *{
+	margin: 0;
+	padding: 0;
+}
+.dws-menu ul,
+.dws-menu ol{
+	list-style: none;
+}
+.dws-menu > ul{
+	display: flex;
+	justify-content: center;
+}
+.dws-menu > ul li a{
+	display: block;
+	background: #000000;
+	padding: 15px 100px 15px 40px;
+	font-size: 20px;
+	color: #454547;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all 0.4s ease;
+
+}
+.dws-menu > ul li{
+	position: relative;	
+}
+.dws-menu > ul li:last-child{
+	text-decoration: none;
+}
+.dws-menu > ul li:hover{
+	border-bottom: 1px solid #000000;
+}
+.dws-menu li a:hover{
+	background: #000000;
+	color: #C0C0C0;
+	box-shadow: 1px 5 px 10 px -5px black;
+	transition: all 0.4s ease;
+}
+.dws-menu li ul{
+	position: absolute;
+	min-width: 1px;
+	display: none;
+}
+.dws-menu li > ul li{
+	border: 1px solid #000000;
+}
+.dws-menu li > ul li a{	
+
+	text-transform: none;
+	background: #FFFFFF;
+}
+.dws-menu li:hover > ul{
+	display: block;
+}
+.footer{
+	display: block;
+	position: fixed;  
+    padding: 870px 650px 500px 800px;  
+    color: #fff; 
+    width: 100%;
+}
+</style>
+</head>
+<body background="rh/33.jpg">
+<header>
+	<snap class="footer">
+    	<p>Телефон: +7(900)00-00-000</p>
+    </snap>
+	<nav class="dws-menu">
+		<ul>
+			<h1><li><a href="1.html">SO TASTY</li></a></h1></li>
+            <li><a href="3.html">Напитки</a>
+                <ul>
+                	<li><a href="4.html">Энергетики</a></li>
+                	<li><a href="5.html">Газировка</a></li>
+                </ul>
+            </li>
+            <li><a href="8.html">Сладости</a></li>
+        </ul>
+    </nav>
+    	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

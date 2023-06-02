@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>So taSty</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<style>
+		body{
+			background: black;
+	        color: #000000;
+	        font-family: sans-serif;
+}
+header{
+	margin: 1px;
+	font-family: 'Cherry Bomb One', cursive;
+}
+.dws-menu *{
+	margin: 0;
+	padding: 0;
+}
+.dws-menu ul,
+.dws-menu ol{
+	list-style: none;
+}
+.dws-menu > ul{
+	display: flex;
+	justify-content: center;
+}
+.dws-menu > ul li a{
+	display: block;
+	background: #000000;
+	padding: 15px 100px 15px 40px;
+	font-size: 20px;
+	color: #454547;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all 0.4s ease;
+
+}
+.dws-menu > ul li{
+	position: relative;	
+}
+.dws-menu > ul li:last-child{
+	text-decoration: none;
+}
+.dws-menu > ul li:hover{
+	border-bottom: 1px solid #000000;
+}
+.dws-menu li a:hover{
+	background: #000000;
+	color: #C0C0C0;
+	box-shadow: 1px 5 px 10 px -5px black;
+	transition: all 0.4s ease;
+}
+.dws-menu li ul{
+	position: absolute;
+	min-width: 1px;
+	display: none;
+}
+.dws-menu li > ul li{
+	border: 1px solid #000000;
+}
+.dws-menu li > ul li a{	
+
+	text-transform: none;
+	background: #FFFFFF;
+}
+.dws-menu li:hover > ul{
+	display: block;
+}
+
+		body{
+
+	        font-family: sans-serif;
+}
+header{
+	font-family: 'Cherry Bomb One', cursive;
+}
+.product-wrapper {
+	display: block;
+	width: 100%;
+	float: left;
+	transition: width .2s;
+}
+@media only screen and (min-width: 350px) {
+	.product-wrapper {
+		width: 50%;
+	}
+}
+
+@media only screen and (min-width: 780px) {
+	.product-wrapper {
+		width: 33.333%;
+	}
+}
+
+@media only screen and (min-width: 950px) {
+	.product-wrapper {
+		width: 25%;
+	}
+}
+.product {
+	display: block;
+	border: 0px;
+	border-radius: 4px;
+	position: relative;
+	background: #fff;
+	margin: 0 10px 10px 0;
+	text-decoration: none;
+	height: 550px;
+	top:100px;
+}
+.products {
+	list-style: none;
+	margin: 0px -20px 0px 0;
+	padding: 0;
+}
+.photo {
+	position: relative;
+	padding-bottom: 100%;
+	overflow: hidden;
+}
+
+.product:hover .photo img {
+	transform: scale(1.05);
+}
+.photo img {	       
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	max-width: 100%;
+	max-height: 100%;
+	margin: auto;
+	transition: transform .4s ease-out;
+}
+.photo {
+	position: relative;
+	padding-bottom: 100%;
+	overflow: hidden;
+}
+.photo img {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	max-width: 100%;
+	max-height: 100%;
+	margin: auto;
+	transition: transform .4s ease-out;
+}
+</style>
+</head>
+<body>
+<header>
+		<nav class="dws-menu">
+		<ul>
+			<h1><li><a href="1.html"><ion-icon name="home-outline"></ion-icon>SO TASTY</li></a></h1></li>
+            <li><a href="3.html">Напитки</a>
+                <ul>
+                	<li><a href="4.html">Энергетики</a></li>
+                	<li><a href="5.html">Газировка</a></li>
+                </ul>
+            </li>
+            <li><a href="8.html">Сладости</a></li>
+        </ul>
+    </nav>
+	<ul class="products clearfix">
+	<li class="product-wrapper">	
+		<a href="test4.html" class="product"><h1>Monster enegry Ultra 500ml</h1>
+			Цена: 2.4<small>$</small><div class="photo">
+			<img src="rh/123.jpg" alt="">
+		</div></a>
+	</li>
+	<li class="product-wrapper">
+		<a href="test3.html" class="product"><h1>Monster enegry Nitro 500ml</h1><div class="photo">Цена: 2.4<small>$</small>
+			<img src="rh/1233.jpg" alt="">
+		</div></a>
+	</li>
+	<li class="product-wrapper">
+		<a href="test2.html" class="product"><h1>Monster enegry Punch 500ml</h1>Цена: 2.4<small>$</small><div class="photo">
+			<img src="rh/1234.jpg" alt="">
+		</div></a>
+	</li>
+	<li class="product-wrapper">
+		<a href="test1.html" class="product"><h1>TAMS 500ml</h1>Цена: 1.5<small>$</small><div class="photo">
+			<img src="rh/4.jpg" alt="">
+		</div></a>
+	</li>
+</ul>
+</body>
+</html>
